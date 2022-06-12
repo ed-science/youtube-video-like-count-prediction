@@ -46,7 +46,7 @@ def find_sentiment(videoId, title, description, sid):
 
 
 sid = SentimentIntensityAnalyzer()
-for i in range(0, len(all_video_ids)):
+for i in range(len(all_video_ids)):
     find_sentiment(all_video_ids[i], all_video_titles[i], all_video_descriptions[i], sid)
 
 #ss = sid.polarity_scores(all_video_titles[0])

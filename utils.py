@@ -7,9 +7,7 @@ def wordCount(text):
 	return len(text.split())
 
 def containsWebsite(text):
-	if re.search('http://', text, re.I) is not None:
-		return 1
-	return 0
+    return 1 if re.search('http://', text, re.I) is not None else 0
 
 def containsSocialMedia(text):
 	# facebook.com
